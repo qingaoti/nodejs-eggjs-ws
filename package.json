@@ -1,0 +1,63 @@
+{
+  "name": "ntms-nodejs-ws-oneWs",
+  "version": "1.0.0",
+  "description": "伏佳安达node-ws模块",
+  "private": true,
+  "egg": {
+    "declarations": true
+  },
+  "dependencies": {
+    "egg": "^2.15.1",
+    "egg-redis": "^2.4.0",
+    "egg-router-plus": "^1.3.1",
+    "egg-scripts": "^2.11.0",
+    "egg-sequelize": "^5.1.0",
+    "egg-socket.io": "^4.1.6",
+    "egg-swagger-doc": "^2.3.2",
+    "egg-view-nunjucks": "^2.2.0",
+    "fast-safe-stringify": "2.0.7",
+    "lodash": "4.17.15",
+    "mysql2": "^1.6.5",
+    "ntms-nodejs-base": "^1.0.0",
+    "request": "^2.72.0"
+  },
+  "devDependencies": {
+    "autod": "^3.0.1",
+    "autod-egg": "^1.1.0",
+    "egg-bin": "^4.13.1",
+    "egg-ci": "^1.11.0",
+    "egg-cors": "^2.2.1",
+    "egg-mock": "^3.21.0",
+    "eslint": "^5.13.0",
+    "eslint-config-egg": "^7.1.0",
+    "eslint-plugin-eslint-plugin": "^2.1.0",
+    "is-extendable": "^1.0.0",
+    "mocha": "^6.2.2",
+    "request": "^2.88.0"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "scripts": {
+    "start": "egg-scripts start --daemon --title=ntms-nodejs-ws --port 7003 --workers=1",
+    "stop": "egg-scripts stop --title=ntms-nodejs-ws --port 7003",
+    "local": "egg-scripts start --env=local --title=ntms-nodejs-ws --port 7003",
+    "dev": "egg-scripts start --daemon --env=dev --title=ntms-nodejs-ws --port 7003",
+    "test": "egg-scripts start --env=test --title=ntms-nodejs-ws --daemon --sticky --ignore-stderr --port 7003 --workers=1",
+    "sit": "egg-scripts start --daemon --env=sit --title=ntms-nodejs-ws --port 7003 --workers=2",
+    "debug": "egg-bin dev --port 7003 --workers=1 --sticky",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod"
+  },
+  "ci": {
+    "version": "10"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "qingaoti",
+  "license": "MIT"
+}
