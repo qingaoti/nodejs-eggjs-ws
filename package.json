@@ -1,7 +1,7 @@
 {
   "name": "ntms-nodejs-ws-oneWs",
   "version": "1.0.0",
-  "description": "伏佳安达node-ws模块",
+  "description": "eggjs-ws模块",
   "private": true,
   "egg": {
     "declarations": true
